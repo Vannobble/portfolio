@@ -1,0 +1,12 @@
+{
+  "name": "doshansel-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Dos Hansel Sihombing",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'No build step for static site'"
+  },
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}
