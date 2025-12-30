@@ -1,3 +1,23 @@
+/* Tambahkan di BARIS PALING ATAS style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; /* Tetapkan base font size */
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
 /* ===== CSS RESET & VARIABLES ===== */
 :root {
     /* Light Theme Colors */
