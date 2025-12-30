@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Dos Hansel Sihombing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all-projects.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">DOS<span class="logo-highlight">HANSEL</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#certifications">Certifications</a></li>
+            </ul>
+            <!-- Theme toggle untuk desktop -->
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+        
+        <!-- Hamburger nav untuk mobile -->
+        <nav id="hamburger-nav">
+            <div class="logo">DOS<span class="logo-highlight">HANSEL</span></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="index.html#certifications" onclick="toggleMenu()">Certifications</a></li>
+                    <li>
+                        <button class="theme-toggle mobile-theme" id="themeToggleMobile" onclick="toggleTheme()">
+                            <i class="fas fa-moon"></i> Toggle Theme
+                        </button>
+                    </li>
+                </div>
+                <button class="theme-toggle mobile-theme" id="themeToggleMobileOutside" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section bg-light" id="all-projects" style="padding-top: 120px; padding-bottom: 60px;">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">All <span class="highlight">Projects</span></h1>
+                <p class="section-description">Complete portfolio of my robotics, embedded systems, and programming projects</p>
+            </div>
+            
+            <!-- Tombol GitHub Profile -->
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <a href="https://github.com/Vannobble" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+            
+            <div class="projects-grid all-projects">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Lora.jpeg" alt="Lora Telemetry">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Telemetry</span>
+                                <span class="tag">MAVLink</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Redundant Telemetry Using LoRa</h3>
+                        <p>Long-range communication system integrating MAVLink protocol with LoRa technology for UAV telemetry.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vannobble/Lora-Telemetry-Redundant" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Pose_Striker.png" alt="Pose-Striker">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Game</span>
+                                <span class="tag">Vision</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pose-Striker Game</h3>
+                        <p>Computer Vision Game using Pose Estimation for interactive gameplay.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vannobble/Pose-Striker" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Self_Balancing.jpg" alt="Self Balancing Robot">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Balancing</span>
+                                <span class="tag">PID</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Self-Balancing-Robot</h3>
+                        <p>A two-wheeled robot that automatically maintains balance using sensors combined with PID algorithm.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vannobble/Self-Balancing-Robot" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Conveyor1.jpg" alt="Tomato Sorting System">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Automation</span>
+                                <span class="tag">Sensor Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Automatic Sorting Tomato</h3>
+                        <p>Automated conveyor-based system that detects tomato ripeness using color sensors.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vannobble/Automatic-Sorting-Tomato" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Conver1.jpg" alt="Fuzzy-Library Reccomend">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Fuzzy Logic</span>
+                                <span class="tag">Book Recommend</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fuzzy-Library-Recommender</h3>
+                        <p>Fuzzy logic-based book recommendation system to give personalized suggestions based on user interest.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vannobble/Fuzzy-Library-Recommender" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Convey1.jpg" alt="Fuzzy-School Reccomend">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Fuzzy Logic</span>
+                                <span class="tag">School Reccomend</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fuzzy School Reccomend</h3>
+                        <p>Fuzzy logic-based school recommendation system to give personalized suggestions based on distance, facilities, and extracurriculars preferences</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vannobble/Fuzzy-School-Reccomender" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Conor1.jpg" alt="Noise Filtering">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">FFT and Low-Pass</span>
+                                <span class="tag">MATLAB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Voice Noise Filtering</h3>
+                        <p>Implementation of Fast Fourier Transform (FFT) and low-pass filtering in MATLAB to remove background noise from voice recordings.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vannobble/Noise-Filtering-on-Voice-Recordings" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Smart_Plant.jpg" alt="Smart-Plant Care">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Automation</span>
+                                <span class="tag">Sensor Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart-Plant Care</h3>
+                        <p>Smart plant care system using sensors to monitor soil moisture and automatically water plants when needed.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vannobble/Smart-Plant-Care" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeToggleMobile = document.getElementById('themeToggleMobile');
+        const themeToggleMobileOutside = document.getElementById('themeToggleMobileOutside');
+        
+        // Check for saved theme or prefer-color-scheme
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const currentTheme = localStorage.getItem('theme') || 
+                           (prefersDarkScheme.matches ? 'dark' : 'light');
+        
+        // Set initial theme
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+        
+        // Theme toggle function
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        }
+        
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            const moonIcon = '<i class="fas fa-moon"></i>';
+            const sunIcon = '<i class="fas fa-sun"></i>';
+            
+            if (themeToggle) {
+                themeToggle.innerHTML = theme === 'light' ? moonIcon : sunIcon;
+            }
+            if (themeToggleMobile) {
+                themeToggleMobile.innerHTML = theme === 'light' ? moonIcon + ' Toggle Theme' : sunIcon + ' Toggle Theme';
+            }
+            if (themeToggleMobileOutside) {
+                themeToggleMobileOutside.innerHTML = theme === 'light' ? moonIcon : sunIcon;
+            }
+        }
+        
+        // Add event listeners
+        if (themeToggle) {
+            themeToggle.addEventListener('click', toggleTheme);
+        }
+        if (themeToggleMobile) {
+            themeToggleMobile.addEventListener('click', toggleTheme);
+        }
+        if (themeToggleMobileOutside) {
+            themeToggleMobileOutside.addEventListener('click', toggleTheme);
+        }
+        
+        // Hamburger menu toggle function
+        function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            const hamburgerIcon = document.querySelector('.hamburger-icon');
+            if (menuLinks && hamburgerIcon) {
+                menuLinks.classList.toggle('open');
+                hamburgerIcon.classList.toggle('open');
+            }
+        }
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Initialize theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateThemeIcon(currentTheme);
+        });
+    </script>
+</body>
+</html>
