@@ -438,8 +438,8 @@ nav {
 
 .image-container {
     position: relative;
-    width: 550px; /* Lebih besar */
-    height: 650px;
+    width: 450px; /* Lebih besar */
+    height: 500px;
     margin: 0 auto;
     z-index: 1;
 }
