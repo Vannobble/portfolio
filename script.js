@@ -33,13 +33,44 @@ function validateForm(formData) {
     return { isValid, errors };
 }
 
+function showPopup(message, type) {
+    var popup = document.getElementById('customPopup');
+    if (!popup) {
+        popup = document.createElement('div');
+        popup.id = 'customPopup';
+        popup.className = 'popup-overlay';
+        popup.innerHTML =
+            '<div class="popup-modal">' +
+                '<div class="popup-icon">' +
+                    '<i class="fas"></i>' +
+                '</div>' +
+                '<h3></h3>' +
+                '<p></p>' +
+                '<button class="btn btn-primary" onclick="closePopup()">OK</button>' +
+            '</div>';
+        document.body.appendChild(popup);
+    }
+    var icon = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
+    var title = type === 'success' ? 'Success!' : 'Error!';
+    popup.querySelector('.popup-icon').className = 'popup-icon ' + type;
+    popup.querySelector('.popup-icon i').className = 'fas ' + icon;
+    popup.querySelector('h3').textContent = title;
+    popup.querySelector('p').textContent = message;
+    popup.classList.add('active');
+}
+
+function closePopup() {
+    var popup = document.getElementById('customPopup');
+    if (popup) popup.classList.remove('active');
+}
+
 async function handleSubmit(e) {
     e.preventDefault();
     if (!contactForm) return;
     const formData = new FormData(e.target);
     const validation = validateForm(formData);
     if (!validation.isValid) {
-        alert(validation.errors.join('\n'));
+        showPopup(validation.errors.join('\n'), 'error');
         return;
     }
     const submitBtn = e.target.querySelector('button[type="submit"]');
@@ -53,15 +84,15 @@ async function handleSubmit(e) {
             hour: '2-digit', minute: '2-digit'
         }));
         await emailjs.sendForm('service_bflauor', 'template_10cy6yb', e.target);
-        alert('Thank you! Your message has been sent successfully. I will get back to you soon!');
+        showPopup('Your message has been sent successfully! I will get back to you soon.', 'success');
         e.target.reset();
     } catch (error) {
         if (error.status === 0) {
-            alert('Network error. Please check your internet connection and try again.');
+            showPopup('Network error. Please check your internet connection and try again.', 'error');
         } else if (error.text) {
-            alert('Error: ' + error.text);
+            showPopup('Error: ' + error.text, 'error');
         } else {
-            alert('Sorry, there was an error sending your message. Please try again.');
+            showPopup('Sorry, there was an error sending your message. Please try again.', 'error');
         }
         const formDataObj = Object.fromEntries(formData);
         localStorage.setItem('last_contact_message', JSON.stringify({
