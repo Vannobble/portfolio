@@ -183,17 +183,6 @@
         gap: var(--spacing-lg);
     }
     
-    /* Projects Section */
-    .projects-filter {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .filter-btn {
-        width: 100%;
-        max-width: 200px;
-    }
-    
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -313,17 +302,12 @@
         height: 200px;
     }
     
-    .projects-filter .filter-btn {
-        padding: var(--spacing-sm) var(--spacing-md);
-        font-size: var(--font-size-sm);
-    }
 }
 
 /* Print Styles */
 @media print {
     header,
     .hero-buttons,
-    .projects-filter,
     .contact-form,
     .footer,
     .back-to-top,
@@ -372,7 +356,7 @@
         --light-color: #ffffff;
     }
     
-    .tool-icon,
+    .tool-icon-wrapper,
     .btn-primary,
     .contact-icon {
         background: var(--primary-color) !important;

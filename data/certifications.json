@@ -1,0 +1,122 @@
+[
+  {
+    "id": "copyright-soil-moisture-security",
+    "title": "Soil Moisture Data Security Device",
+    "image": "./assets/Hak_Cipta.png",
+    "alt": "Copyright registration certificate",
+    "org": "Director General of Intellectual Property Rights (DGIP)",
+    "date": "Certificate of Copyright Registration",
+    "type": "Copyright",
+    "summary": "Certificate of copyright registration for a soil moisture data security device.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": true
+  },
+  {
+    "id": "krti-2025-technology-development",
+    "title": "KRTI 2025 Finalist",
+    "image": "./assets/KRTI_TD.png",
+    "alt": "KRTI 2025 finalist certificate",
+    "org": "Kontes Robot Terbang Indonesia",
+    "date": "Technology Development Division",
+    "type": "Award",
+    "summary": "Finalist achievement in the Technology Development Division of Kontes Robot Terbang Indonesia 2025.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": true
+  },
+  {
+    "id": "krti-2024-fixed-wing",
+    "title": "KRTI 2024 Finalist",
+    "image": "./assets/KRTI_FW.png",
+    "alt": "KRTI 2024 finalist certificate",
+    "org": "Kontes Robot Terbang Indonesia",
+    "date": "Fixed Wing Division",
+    "type": "Award",
+    "summary": "Finalist achievement in the Fixed Wing Division of Kontes Robot Terbang Indonesia 2024.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": true
+  },
+  {
+    "id": "nb-iot-teaching-assistant",
+    "title": "Workshop Smart Monitoring with NB-IOT",
+    "image": "./assets/NB-IOT.png",
+    "alt": "NB-IoT teaching assistant certificate",
+    "org": "RES LAB",
+    "date": "Teaching Assistant",
+    "type": "Workshop",
+    "summary": "Teaching assistant certificate for a smart monitoring workshop using NB-IoT technology.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": true
+  },
+  {
+    "id": "embedded-systems-workshop",
+    "title": "Embedded Systems Workshop",
+    "image": "./assets/STSCIN.png",
+    "alt": "Embedded systems workshop certificate",
+    "org": "RESxICNxSTSCIN",
+    "date": "9-hour Workshop",
+    "type": "Workshop",
+    "summary": "Embedded systems workshop certificate covering practical electronics and embedded development topics.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": false
+  },
+  {
+    "id": "advanced-electronics-assistant",
+    "title": "Advanced Electronics Practicum Assistant",
+    "image": "./assets/Relan.png",
+    "alt": "Advanced electronics assistant certificate",
+    "org": "RES LAB",
+    "date": "Advanced Electronics",
+    "type": "Assistantship",
+    "summary": "Practicum assistant experience for Advanced Electronics.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": false
+  },
+  {
+    "id": "digital-systems-assistant",
+    "title": "Digital Systems Practicum Assistant",
+    "image": "./assets/Sisdig.png",
+    "alt": "Digital systems assistant certificate",
+    "org": "RES LAB",
+    "date": "Practicum Assistant",
+    "type": "Assistantship",
+    "summary": "Practicum assistant experience for Digital Systems.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": false
+  },
+  {
+    "id": "gep-lia-course",
+    "title": "GEP LIA Course",
+    "image": "./assets/GEP_LIA.png",
+    "alt": "GEP LIA certificate",
+    "org": "GEP LIA",
+    "date": "General English",
+    "type": "Course",
+    "summary": "General English course certificate from GEP LIA.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": false
+  },
+  {
+    "id": "quadcopter-expert-staff",
+    "title": "Experts Staff Quadcopter",
+    "image": "./assets/Staff_Ahli_Quad.png",
+    "alt": "Quadcopter expert staff certificate",
+    "org": "ROBOTIIK",
+    "date": "Programming Sub-Division",
+    "type": "Organization",
+    "summary": "Expert staff role in the Quadcopter programming sub-division.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": false
+  },
+  {
+    "id": "ksn-informatics-winner",
+    "title": "KSN Informatics Winner",
+    "image": "./assets/KSN_Informatika.png",
+    "alt": "KSN Informatics winner certificate",
+    "org": "Puspresnas",
+    "date": "KSN Regency Level",
+    "type": "Award",
+    "summary": "Winner achievement in KSN Informatics at regency level.",
+    "drive": "https://drive.google.com/drive/folders/1CGmtU9e9OTdiDHOwOaFtQsjA-DGRxmI8",
+    "featured": false
+  }
+]

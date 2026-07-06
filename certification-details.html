@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Projects | Dos Hansel Sihombing</title>
+    <title>Certification Details | Dos Hansel Sihombing</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./all-projects.css">
     <link rel="stylesheet" href="./mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 <body>
     <header>
@@ -16,8 +16,8 @@
             <div class="logo">DOS<span class="logo-highlight">HANSEL</span></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="index.html#certifications">Certifications</a></li>
+                <li><a href="all-certifications.html">All Certifications</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle">
                 <i class="fas fa-moon"></i>
@@ -34,8 +34,8 @@
                 </div>
                 <div class="menu-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#projects">Projects</a></li>
                     <li><a href="index.html#certifications">Certifications</a></li>
+                    <li><a href="all-certifications.html">All Certifications</a></li>
                     <li>
                         <button class="theme-toggle mobile-theme" id="themeToggleMobile">
                             <i class="fas fa-moon"></i> Toggle Theme
@@ -49,33 +49,22 @@
         </nav>
     </header>
 
-    <section class="section bg-light" id="all-projects" style="padding-top: 120px; padding-bottom: 60px;">
+    <section class="section detail-section bg-light">
         <div class="container">
-            <div class="section-header">
-                <h1 class="section-title">All <span class="highlight">Projects</span></h1>
-                <p class="section-description">Complete portfolio of my robotics, embedded systems, and programming projects</p>
+            <div data-certification-detail>
+                <div class="section-header">
+                    <p class="section-subtitle">Loading</p>
+                    <h1 class="section-title">Certification <span class="highlight">Details</span></h1>
+                    <p class="section-description">Loading certification data...</p>
+                </div>
             </div>
-            
-            <div class="text-center" style="margin-bottom: 3rem;">
-                <a href="https://github.com/Vannobble" target="_blank" class="btn btn-secondary">
-                    <i class="fab fa-github"></i> View All Projects on GitHub
-                </a>
-            </div>
-            
-            <div class="projects-grid"></div>
-            
             <div class="text-center" style="margin-top: 3rem;">
-                <a href="index.html" class="btn btn-primary">
-                    <i class="fas fa-arrow-left"></i> Back to Home
+                <a href="all-certifications.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i> Back to Certifications
                 </a>
             </div>
         </div>
     </section>
-    
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
 
     <script src="./scripts/theme.js"></script>
     <script src="./scripts/content-config.js"></script>

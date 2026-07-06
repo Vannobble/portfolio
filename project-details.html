@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 <body>
     <header>
@@ -18,12 +19,45 @@
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="all-projects.html">All Projects</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+        
+        <nav id="hamburger-nav">
+            <div class="logo">DOS<span class="logo-highlight">HANSEL</span></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="all-projects.html">All Projects</a></li>
+                    <li>
+                        <button class="theme-toggle mobile-theme" id="themeToggleMobile">
+                            <i class="fas fa-moon"></i> Toggle Theme
+                        </button>
+                    </li>
+                </div>
+                <button class="theme-toggle mobile-theme" id="themeToggleMobileOutside">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
-    <section class="section">
+    <section class="section detail-section bg-light">
         <div class="container">
-            <!-- Konten detail proyek -->
+            <div data-project-detail>
+                <div class="section-header">
+                    <p class="section-subtitle">Loading</p>
+                    <h1 class="section-title">Project <span class="highlight">Details</span></h1>
+                    <p class="section-description">Loading project data...</p>
+                </div>
+            </div>
             <div class="text-center" style="margin-top: 3rem;">
                 <a href="all-projects.html" class="btn btn-primary">
                     <i class="fas fa-arrow-left"></i> Back to Projects
@@ -31,5 +65,8 @@
             </div>
         </div>
     </section>
+    <script src="./scripts/theme.js"></script>
+    <script src="./scripts/content-config.js"></script>
+    <script src="./scripts/content-loader.js"></script>
 </body>
 </html>
