@@ -105,7 +105,7 @@
             tools: splitList(project.tools),
             result: project.result,
             github: project.github,
-            demo: project.demo,
+            demo: project.demo ? project.demo.trim() : "",
             featured: normalizeBoolean(project.featured)
         };
     }
