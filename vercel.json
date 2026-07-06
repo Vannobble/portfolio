@@ -16,6 +16,14 @@
     {
       "src": "assets/*",
       "use": "@vercel/static"
+    },
+    {
+      "src": "scripts/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "data/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
