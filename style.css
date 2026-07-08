@@ -469,12 +469,12 @@ nav {
 }
 
 /* Warna untuk setiap icon */
-.icon-float.cpp {
-    background: linear-gradient(135deg, #00599C, #004482);
+.icon-float.iot {
+    background: linear-gradient(135deg, #06B6D4, #0891B2);
 }
 
-.icon-float.python {
-    background: linear-gradient(135deg, #3776AB, #2C5F8A);
+.icon-float.network {
+    background: linear-gradient(135deg, #7C3AED, #6D28D9);
 }
 
 .icon-float.uav {
@@ -503,13 +503,13 @@ nav {
 }
 
 /* Posisi icons */
-.icon-float:nth-child(1) { /* C++ */
+.icon-float:nth-child(1) { /* IoT */
     top: -30px;
     left: -30px;
     animation-delay: 0s;
 }
 
-.icon-float:nth-child(2) { /* Python */
+.icon-float:nth-child(2) { /* Network */
     top: -30px;
     right: -30px;
     animation-delay: 1.5s;
