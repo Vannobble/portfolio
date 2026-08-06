@@ -700,6 +700,98 @@ nav {
     margin: 0;
 }
 
+/* ===== RECOMMENDATIONS SECTION ===== */
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+    width: 100%;
+}
+
+.recommendation-card {
+    background: var(--light-color);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    height: 100%;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.recommendation-quote {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--primary-color) 15%, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.recommendation-quote i {
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+}
+
+.recommendation-text {
+    color: var(--gray-color);
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: var(--spacing-lg);
+}
+
+.recommendation-footer {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    border-top: 1px solid color-mix(in srgb, var(--dark-color) 10%, transparent);
+    padding-top: var(--spacing-md);
+}
+
+.recommendation-avatar {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avatar-initial {
+    color: white;
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    letter-spacing: 0.5px;
+}
+
+.recommendation-footer h4 {
+    color: var(--dark-color);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.recommendation-footer p {
+    color: var(--primary-color);
+    font-size: var(--font-size-xs);
+    line-height: 1.4;
+}
+
+@media (max-width: 991px) {
+    .recommendations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== SKILLS SECTION ===== */
 .skills-grid {
     display: grid;
