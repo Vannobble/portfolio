@@ -755,6 +755,7 @@ nav {
 }
 
 .recommendation-avatar {
+    position: relative;
     flex: 0 0 48px;
     width: 48px;
     height: 48px;
@@ -764,6 +765,15 @@ nav {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+.recommendation-avatar img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-full);
 }
 
 .avatar-initial {
